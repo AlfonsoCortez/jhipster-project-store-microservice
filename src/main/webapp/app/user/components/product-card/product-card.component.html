@@ -1,0 +1,46 @@
+<!-- <img [src]="product?.image" alt="" srcset=""> -->
+<img class="image-product" [src]="'data:' + product?.imageContentType + ';base64,' + product?.image" style=" max-width: 45;" alt="product image"/>
+<div class="card-bory">
+    <h5 class="card-title">{{ product?.name }}</h5>
+    <p class="card-text">{{ product?.description}}</p>
+    <p class="card-text">{{ product?.price | currency}}</p>
+    <div [ngSwitch]="product?.recommended" class="container-rating">
+        <div *ngSwitchCase="'One'">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <div *ngSwitchCase="'Two'">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <div *ngSwitchCase="'Three'">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <div *ngSwitchCase="'Four'">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <div *ngSwitchCase="'Five'">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        </div>
+
+    </div>
+    <a class="btn btn-primary" [routerLink]="['/productlist/producto', product?.id]">Ver detalle</a>
+</div>
