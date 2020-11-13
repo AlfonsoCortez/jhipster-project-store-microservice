@@ -17,12 +17,14 @@ import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
 import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   imports: [
     BrowserModule,
     StoreSharedModule,
     StoreCoreModule,
     StoreHomeModule,
+    FontAwesomeModule,
     FormsModule,
     RouterModule,
     UserModule,

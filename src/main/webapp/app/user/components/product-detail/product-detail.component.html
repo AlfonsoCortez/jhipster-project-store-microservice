@@ -5,41 +5,41 @@
         <p><b>Tamaño: </b>{{product?.size}}</p>
         <p><b>Categoria: </b>{{product?.productCategory.name}}</p>
         <div class="container-rating"><b>Calificación: </b>
-            <div [ngSwitch]="product?.recommended" >
+            <div [ngSwitch]="product?.recommended" class="container-rating">
                 <div *ngSwitchCase="'One'">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class=""></fa-icon>
+                    <fa-icon [icon]="faStar" class=""></fa-icon>
+                    <fa-icon [icon]="faStar" class=""></fa-icon>
+                    <fa-icon [icon]="faStar" class=""></fa-icon>
                 </div>
                 <div *ngSwitchCase="'Two'">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class=""></fa-icon>
+                    <fa-icon [icon]="faStar" class=""></fa-icon>
+                    <fa-icon [icon]="faStar" class=""></fa-icon>
                 </div>
                 <div *ngSwitchCase="'Three'">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class=""></fa-icon>
+                    <fa-icon [icon]="faStar" class=""></fa-icon>
                 </div>
                 <div *ngSwitchCase="'Four'">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class=""></fa-icon>
                 </div>
                 <div *ngSwitchCase="'Five'">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
+                    <fa-icon [icon]="faStar" class="checked"></fa-icon>
                 </div>
 
             </div>

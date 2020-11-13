@@ -10,10 +10,10 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { InterestedComponent } from './components/interested/interested.component';
 import { RatingComponent } from './components/rating/rating.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [HomeComponent, ProductListComponent, ProductCardComponent, ProductDetailComponent, InterestedComponent, RatingComponent],
-  imports: [CommonModule, UserRoutingModule, FormsModule, RouterModule, ReactiveFormsModule]
+  imports: [CommonModule, FontAwesomeModule, UserRoutingModule, FormsModule, RouterModule, ReactiveFormsModule]
   // exports: [HomeComponent, ProductListComponent, ProductCardComponent, ProductDetailComponent]
 })
 export class UserModule {}

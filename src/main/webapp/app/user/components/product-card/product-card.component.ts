@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 // import { ProductService } from './../../../entities/product/product.service';
 import { Product } from './../../../shared/model/product.model';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'jhi-product-card',
@@ -9,6 +10,7 @@ import { Product } from './../../../shared/model/product.model';
 })
 export class ProductCardComponent implements OnInit {
   @Input() product?: Product;
+  faStar = faStar;
 
   constructor() {}
 
